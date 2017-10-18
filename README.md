@@ -1,13 +1,5 @@
-# Copy Code to Clipboard on GitBook
+# Run Pony Code in Playground
 
-## Install it using:
+Add a Run in playground to code sample for the pony tutorial.
 
-```$ npm install gitbook-plugin-copy-code-button```
-
-To use it in your book, add this to book.json:
-```
-{
-    "plugins": ["copy-code-button"]
-}
-```
-![demo_gif](demo_gif.gif)
+This is based on the [gitbook-plugin-copy-code-button](https://github.com/WebEngage/gitbook-plugin-copy-code-button).

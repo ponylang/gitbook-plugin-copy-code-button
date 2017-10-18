@@ -1,30 +1,25 @@
 {
-  "name": "gitbook-plugin-copy-code-button",
-  "description": "Copy code on GitBook",
+  "name": "gitbook-plugin-run-code-button-pony",
+  "description": "run pony code",
   "main": "index.js",
   "version": "0.0.2",
   "engines": {
     "gitbook": "*"
   },
-  "homepage": "https://github.com/WebEngage/gitbook-plugin-copy-code-button",
+  "homepage": "https://github.com/codec-abc/gitbook-plugin-copy-code-button",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WebEngage/gitbook-plugin-copy-code-button.git"
+    "url": "git+https://github.com/codec-abc/gitbook-plugin-copy-code-button.git"
   },
-  "author": "Nitin Bansal <nitin@webklipper.com>",
+  "author": "codec-abc",
   "scripts": {},
-  "_from": "gitbook-plugin-copy-code-button@0.0.1",
   "_npmVersion": "2.9.0",
   "_nodeVersion": "0.10.38",
   "_npmUser": {
-    "name": "webengage",
-    "email": "lithin@webklipper.com"
+    "name": "codec-abc",
   },
-  "maintainers": [
-    "Nitin Bansal <nitin@webklipper.com>"
-  ],
   "bugs": {
-    "url": "https://github.com/WebEngage/gitbook-plugin-copy-code-button/issues"
+    "url": "https://github.com/codec-abc/gitbook-plugin-copy-code-button/issues"
   },
   "license": "ISC"
 }

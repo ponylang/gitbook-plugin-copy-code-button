@@ -1,25 +1,25 @@
 {
-  "name": "gitbook-plugin-run-code-button-pony",
+  "name": "gitbook-plugin-run-code-button-ponylang",
   "description": "run pony code",
   "main": "index.js",
   "version": "0.0.2",
   "engines": {
     "gitbook": "*"
   },
-  "homepage": "https://github.com/codec-abc/gitbook-plugin-copy-code-button",
+  "homepage": "https://github.com/ponylang/gitbook-plugin-copy-code-button",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codec-abc/gitbook-plugin-copy-code-button.git"
+    "url": "git+https://github.com/ponylang/gitbook-plugin-copy-code-button.git"
   },
-  "author": "codec-abc",
+  "author": "ponylang",
   "scripts": {},
   "_npmVersion": "2.9.0",
   "_nodeVersion": "0.10.38",
   "_npmUser": {
-    "name": "codec-abc"
+    "name": "ponylang"
   },
   "bugs": {
-    "url": "https://github.com/codec-abc/gitbook-plugin-copy-code-button/issues"
+    "url": "https://github.com/ponylang/gitbook-plugin-copy-code-button/issues"
   },
   "license": "ISC"
 }

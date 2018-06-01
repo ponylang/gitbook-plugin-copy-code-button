@@ -1,19 +1,4 @@
 require(["gitbook", "jQuery"], function(gitbook, $) {
-  
-    function createGistJsonRequest(textContent) {
-      let val = JSON.stringify( {
-        description : "Pony tutorial sample",
-        public : true,
-        files :
-        {
-          "sample.pony" : {
-            content: textContent
-          } 
-        }
-      });
-      return val;
-    }
-  
     gitbook.events.bind("page.change", function() {
       $("pre").each(function() {
         $(this).css("position", "relative");
@@ -30,15 +15,9 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
           $copyCodeButton.click(function(){
             var $codeContainer = $(this).siblings("code");
             if($codeContainer) {
-              var text = $codeContainer[0].innerText;
-              var gistApiUrl = "https://api.github.com/gists";
-              var postContent = createGistJsonRequest(text);
-              $.post(gistApiUrl, postContent, 
-                function(serverResponse) {
-                  var newUrl = "http://playground.ponylang.org/?gist=" + serverResponse.id;
-                  //window.open(newUrl, '_blank');
-                  window.location.href = newUrl;
-              }); 
+              var encodedCode = encodeURIComponent($codeContainer[0].innerText);
+              var newUrl = "https://playground.ponylang.org/?code=" + encodedCode;
+              window.location.href = newUrl;
             }
           });
         $(this).append($copyCodeButton);
@@ -46,4 +25,3 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       });
     });
   });
-  

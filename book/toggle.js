@@ -4,7 +4,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         $(this).css("position", "relative");
         var codeElem = $(this)[0].children[0];
         var codeContent = codeElem.innerText;
-        var hasMainAndCreate = 
+        var hasMainAndCreate =
           codeContent.indexOf("actor Main") != -1 &&
           codeContent.indexOf("new create(env: Env) =>") != -1;
 
@@ -16,7 +16,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             var $codeContainer = $(this).siblings("code");
             if($codeContainer) {
               var encodedCode = encodeURIComponent($codeContainer[0].innerText);
-              var newUrl = "https://playground.ponylang.org/?code=" + encodedCode;
+              var newUrl = "https://playground.ponylang.io/?code=" + encodedCode;
               window.location.href = newUrl;
             }
           });
